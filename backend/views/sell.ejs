@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    <h1>CAMSTORE</h1>
+    <form action="/sell" method="post">
+        <div>
+            <h1><%=message%></h1>
+            <p><%=desc%></p>
+            <label>Item Name</label>
+            <input class="item" type="text" name="nameitem">
+            <label>price</label>
+            <input class="cost" type="text" name="price">
+            <label>brand</label>
+            <input class="branding" type="text" name="brand">
+            <label>description</label>
+            <input class="desc" type="text" name="decsr">
+            <label for="file">Choose file to upload</label>
+            <input type="file" id="file" name="file" multiple />
+            
+        </div>
+        <button class="pub">Publish</button>
+    </form>
+</body>
+</html>
